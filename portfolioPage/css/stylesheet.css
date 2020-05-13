@@ -3,3 +3,14 @@
     width: 120px;
     position:fixed;
 }
+
+#main_image{
+    margin: auto;
+    animation-duration: 1500ms;
+    opacity: 1;
+}
+
+.logotex{
+    color:red;
+    font-size:40px;
+}
