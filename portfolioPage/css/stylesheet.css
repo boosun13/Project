@@ -1,16 +1,21 @@
+
+
 .logo {
     font-size: 32px;
     width: 120px;
     position:fixed;
+    z-index: 10;
 }
 
 #main_image{
     margin: auto;
-    animation-duration: 1500ms;
-    opacity: 1;
+    opacity: 0.6;
 }
 
-.logotex{
-    color:red;
-    font-size:40px;
+#main_image:hover{
+    opacity: 0.9;
+}
+
+footer{
+    height: 40px;
 }
