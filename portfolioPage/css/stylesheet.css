@@ -1,21 +1,51 @@
+body{
+    margin: o;
+}
 
+a{
+    color: none;
+}
 
 .logo {
     font-size: 32px;
     width: 120px;
     position:fixed;
     z-index: 10;
+    cursor: pointer;
 }
 
 #main_image{
     margin: auto;
-    opacity: 0.6;
+    padding-top: 45px;
+    /* opacity: 0.6; */
 }
 
-#main_image:hover{
-    opacity: 0.9;
+.m-image{
+    height: 850px;
+    background-image: url("../img/bg-image.jpg");
+    opacity: 0.7;
 }
 
 footer{
     height: 40px;
+}
+
+ul{
+    list-style: none;
+}
+
+.info{
+    padding: 55px 0;
+}
+
+.info h1{
+    border-bottom: double rgb(224, 174, 174) 5px;
+}
+
+.about-list{
+    font-size:25px;
+}
+
+.about-list li{
+    display: none;
 }

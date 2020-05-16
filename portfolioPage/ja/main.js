@@ -18,7 +18,7 @@ const timer = setInterval(() => {
     if(i >= images.length-1){
         i = 0;
     } ;
-}, 4000);
+}, 10000);
 
 
 }
