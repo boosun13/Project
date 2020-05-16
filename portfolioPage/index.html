@@ -10,7 +10,7 @@
     <link rel = "stylesheet" href = "css/stylesheet.css">
 </head>
 <body >
-    <div class = "logo text-center text-white bg-info" a link="#">Shuda</div>
+    <div class = "logo text-center text-white bg-info"><a href="#">Shuda</a></div>
 
     <div class="m-image bg-secondary">
         <div>
@@ -32,18 +32,21 @@
             <h1>About</h1>
             <div class ="name text-center size-30 font-weight-bolder" style="font-size:50px;">Shuda</div>
             <div class="intro">
-                <ul class="about-list text-center">〇現在、以下プログラミング鋭意学習中
+                <h2 class ="about-list">〇現在、以下プログラミング鋭意学習中</h2>
+                <ul class="list-text">
                     <li>HTML&CSS</li>
                     <li>JavaScript</li>
                     <li>Ruby</li>
                 </ul>
                 <br>
-                <ul class="about-list text-center">〇My Career
+                <h2 class ="about-list">〇My Career</h2>
+                <ul class="list-text">
                     <li>薬剤師「Pharmacist」</li>
                     <li>薬局長(店舗責任者)「Pharmacy Director」</li>
                 </ul>
                 <br>
-                <ul class="about-list text-center">〇好きな言葉
+                <h2 class ="about-list">〇好きな言葉</h2>
+                <ul class="list-text">
                     <li>「夢を見ることができれば、それは実現できる」(ウォルト・ディズニー)</li>
                     <li>「金を残すは三流、名を残すは二流、人を残すは一流」（野村克也)</li>
                     <li>「現状維持は最大の後退」(Shuda)</li>
@@ -64,6 +67,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="slick/slick.js" type="text/javascript"></script>
+    <script src=ja/main.js></script>
     <script>
         $(function(){
             $(".m-image").slick({
@@ -72,6 +76,17 @@
                 autoplaySpeed: 5000,
                 dots: false,
                 fade: true,
+            });
+        });
+
+        $(document).ready(function(){
+            $(".about-list").on("mouseover", function() {
+                $(this).next().toggleClass("moved");
+            });
+        });
+        $(document).ready(function(){
+            $(".about-list").on("mouseout", function() {
+                $(this).next().toggleClass("moved");
             });
         });
     </script>
